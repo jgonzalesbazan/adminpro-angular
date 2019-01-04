@@ -13,6 +13,7 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
 
 // ng2-charts
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ChartsModule } from 'ng2-charts';
         Graficas1Component,
         PagesComponent,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
     ],
     imports: [
         CommonModule,
