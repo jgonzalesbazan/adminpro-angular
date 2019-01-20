@@ -11,11 +11,15 @@ import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
+// pipe module
+import { PipesModule } from '../pipes/pipes.module';
+
 // ng2-charts
 import { ChartsModule } from 'ng2-charts';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -28,14 +32,16 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         GraficoDonaComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
     imports: [
         CommonModule,
         SharedModule,
         FormsModule,
         PAGES_ROUTES,
-        ChartsModule
+        ChartsModule,
+        PipesModule
     ],
     exports: [
         DashboardComponent,
