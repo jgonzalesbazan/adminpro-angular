@@ -49,7 +49,7 @@ export class ProfileComponent implements OnInit {
     const reader = new FileReader();
     const urlImgenTemp = reader.readAsDataURL(archivo);
 
-    reader.onloadend = () => this.imagenTemp = reader.result;
+    reader.onloadend = () => this.imagenTemp = reader.result + '';
   }
 
   cambiarImagen() {
