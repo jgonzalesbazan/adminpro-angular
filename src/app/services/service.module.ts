@@ -9,7 +9,9 @@ import {
   SharedService,
   UsuarioService,
   LoginGuardGuard,
-  SubirArchivoService
+  SubirArchivoService,
+  HospitalService,
+  MedicoService
 } from './service.index';
 
 @NgModule({
@@ -21,7 +23,9 @@ import {
     UsuarioService,
     LoginGuardGuard,
     SubirArchivoService,
-    ModalUploadService
+    ModalUploadService,
+    HospitalService,
+    MedicoService
   ],
   imports: [
     CommonModule,
